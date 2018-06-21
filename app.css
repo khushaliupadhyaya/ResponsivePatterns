@@ -133,6 +133,11 @@ article p {
     .row-sm-height {
         display: table-row;
     }
+
+    .col-sm-height {
+        display: table-cell;
+        float: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -146,8 +151,35 @@ article p {
         display: table-row;
     }
 
-    /* .col-md-height {
+    .col-md-height {
         display: table-cell;
         float: none;
-    } */
+    }
+}
+
+/* may not need these */
+@media (min-width: 1200px) {
+    .container-lg-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-lg-height {
+        display:table-row;
+    }
+    .col-lg-height {
+        display:table-cell;
+        float:none;
+    }
+}
+
+/* vertical alignment styles */
+.col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
 }
