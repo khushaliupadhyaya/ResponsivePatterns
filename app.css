@@ -1,8 +1,28 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    padding-top: 80px;
 }
 
-header, footer {
+.navbar {
+    margin-bottom: 0px;
+    padding: 30px 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #bbb;
+}
+
+.navbar img {
+    width: 15%;
+    height: 15%;
+}
+
+.cbp-af-header-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer {
     background-color: #333;
     color: #ddd;
     padding: 20px;

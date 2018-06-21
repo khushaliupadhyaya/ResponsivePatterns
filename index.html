@@ -12,13 +12,62 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
-    <script src="main.js"></script>
+    
 </head>
 <body>
-    <header class="container-fluid">
-        <h1>HEADER</h1>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" 
+            role="navigation">
+            <a href="#top">
+                <img src="data:image/png;base64,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" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#sights">Sights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sports">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#activities">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-us">Contact Us</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+                
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li> -->
+              </ul>
+
+              <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+            </div>
+          </nav>
     </header>
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div class="row">
 
                 <div class="row">
@@ -39,7 +88,7 @@
                                 </div>
                             </div>
                         </div>
-        </div>
+        </div> -->
 
         <div class="container-fluid container-sm-height">
             <div class="row row-sm-height">
@@ -130,5 +179,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="./classie.js"></script>
+    <script src="./cbpAnimatdHeader.js"></script>
 </body>
 </html>
