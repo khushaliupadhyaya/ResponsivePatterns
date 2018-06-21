@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
     <script src="main.js"></script>
 </head>
@@ -16,26 +20,8 @@
     </header>
     <div class="container-fluid">
         <div class="row">
-            <aside class="col-sm-2">
-                <h4 class="color-title">
-                    <b>Pink</b>
-                </h4>
-                <div class="color-list">
-                    <a>
-                        <img src="http://clipground.com/images/pink-square-clipart-2.png" />
-                        <h4>Pink Square</h4>
-                    </a>
-                    <a>
-                        <img src="http://clipground.com/images/blue-square-clipart-6.png" />
-                        <h4>Blue Square</h4>
-                    </a>
-                    <a>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAJFBMVEWCTtKDTdN+UMqETM+FTc1+U8J/T8uCTsmBTteBT9eAT9KETtnAHsbOAAAAzElEQVR4nO3W2w6CMAwA0NYr6v//r4BcFcUg+mDOydjoUta+EIg9sSGISGJL7KjehvbKwX13ZffONGH2wd2az89p5uzWnCjVlxyWzqaDdnm3ZPYnjIuP+qgfLUqnatTTOHi1+TyY3lyWMd/cCmfEmTgQRz7+v/gHl1JRjXpqg8tjsE7GxOZ8xpebu30mMgbrKJjcnM+I32Qsa+4+AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgN+4ArgsOelpLUfdAAAAAElFTkSuQmCC" />
-                        <h4>Purple Square</h4>
-                    </a>
-                </div>
-            </aside>
-            <section class="col-sm-8">
+
+            <section class="col-sm-8 col-sm-push-2">
                 <article>
                     <h2>Why I chose these colors</h2>
                     <img src="data:image/jpeg;base64,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" />
@@ -73,6 +59,27 @@
                     </div>
                 </article>
             </section>
+
+            <aside class="col-sm-2 col-sm-pull-8">
+                <h4 class="color-title">
+                    <b>Pink</b>
+                </h4>
+                <div class="color-list">
+                    <a>
+                        <img src="http://clipground.com/images/pink-square-clipart-2.png" />
+                        <h4>Pink Square</h4>
+                    </a>
+                    <a>
+                        <img src="http://clipground.com/images/blue-square-clipart-6.png" />
+                        <h4>Blue Square</h4>
+                    </a>
+                    <a>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAJFBMVEWCTtKDTdN+UMqETM+FTc1+U8J/T8uCTsmBTteBT9eAT9KETtnAHsbOAAAAzElEQVR4nO3W2w6CMAwA0NYr6v//r4BcFcUg+mDOydjoUta+EIg9sSGISGJL7KjehvbKwX13ZffONGH2wd2az89p5uzWnCjVlxyWzqaDdnm3ZPYnjIuP+qgfLUqnatTTOHi1+TyY3lyWMd/cCmfEmTgQRz7+v/gHl1JRjXpqg8tjsE7GxOZ8xpebu30mMgbrKJjcnM+I32Qsa+4+AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgN+4ArgsOelpLUfdAAAAAElFTkSuQmCC" />
+                        <h4>Purple Square</h4>
+                    </a>
+                </div>
+            </aside>
+
             <aside class="color-icon-list col-sm-2">
                     <a>
                         <img src="data:image/jpeg;base64,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" />
